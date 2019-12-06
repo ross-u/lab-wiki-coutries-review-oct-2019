@@ -11,24 +11,23 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar />
-        <CountryList />
         <Switch>
           <Route exact path="/" component={CountryList} />
           <Route exact path="/details/:countryId" component={CountryDetails} />
-          {/* <Route
-            exact
-            path="/details/:countryId"
-            render={props => (
-              <CountryDetails
-                {...props}
-                countryArr={this.state.countriesArray}
-              /> */}
-          )} />
         </Switch>
         ;
       </div>
     );
   }
 }
+
+/* <Route
+            exact
+            path="/details/:countryId"
+            render={props => (
+              <CountryDetails
+                {...props}
+                countryArr={this.state.countriesArray}
+              /> */
 
 export default App;
